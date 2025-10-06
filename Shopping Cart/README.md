@@ -8,6 +8,10 @@
 ![demo](https://raw.githubusercontent.com/Abhijith14/VB.NET-PROJECTS/master/readme_assets/cart.png)
 
 <br>
+
+> **📢 C# Migration Available**: A C# version of this project is now available at [Shopping Cart CS](../Shopping%20Cart%20CS). The C# project maintains equivalent functionality while targeting .NET Framework 4.7.2 with modern C# patterns. See [PR #3](https://github.com/ben-windsurf/VB.NET-PROJECTS/pull/3) for migration details.
+
+<br>
 <br>
 
 

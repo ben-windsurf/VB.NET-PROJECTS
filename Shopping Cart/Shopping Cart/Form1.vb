@@ -1,23 +1,15 @@
-﻿Public Class Form1
+Public Class Form1
+    Private ReadOnly _cartService As New Shopping_Cart.ShoppingCartService()
 
-    'Total Code
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        Dim total = 0
-        If CheckBox1.Checked Then
-            total += 50000
-        End If
-        If CheckBox2.Checked Then
-            total += 10000
-        End If
-        If CheckBox3.Checked Then
-            total += 8000
-        End If
-
-        TextBox1.Text = "Total is : ₹ " + Str(total)
+        Dim total As Integer = _cartService.CalculateTotal(
+            CheckBox1.Checked,
+            CheckBox2.Checked,
+            CheckBox3.Checked
+        )
+        TextBox1.Text = _cartService.FormatTotal(total)
     End Sub
 
-    'Clear Code
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         CheckBox1.Checked = False
         CheckBox2.Checked = False
